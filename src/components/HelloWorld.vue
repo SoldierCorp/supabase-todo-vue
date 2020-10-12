@@ -31,7 +31,6 @@ export default {
     }
   },
   mounted() {
-    console.log(supabase)
     this.getItems()
   },
   methods: {
@@ -41,7 +40,6 @@ export default {
           .from('Items')
           .select('id, title, status')
         this.items = items.body
-        // return items.body
       } catch (error) {
           console.log('Error: ', error)
       }
