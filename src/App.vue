@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Supabase Todo Vue.js Example"/>
+    <router-view></router-view>
+    <footer class="absolute bottom-0 right-0 p-2 bg-brand-500 rounded rounded-br-none rounded-tr-none">
+      <p class="text-sm text-black m-0">
+        <span class="text-xs">Made by</span> <a href="https://edgardorl.com">Edgardo</a>
+      </p>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '~@/assets/styles/app';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
